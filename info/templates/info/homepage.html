@@ -38,7 +38,10 @@
                 <a class="nav-link text-capitalize">{{ request.user.student.name }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+              <form method="post" action="/accounts/logout">
+                {% csrf_token %}
+                <a class="btn btn-primary" role="input" type="submit">Logout</a>
+              </form>
             </li>
           </ul>
         </div>

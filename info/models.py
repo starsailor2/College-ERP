@@ -8,7 +8,8 @@ from datetime import timedelta
 # Create your models here.
 sex_choice = (
     ('Male', 'Male'),
-    ('Female', 'Female')
+    ('Female', 'Female'),
+    ('Other', 'Other'),
 )
 
 time_slots = (
@@ -21,6 +22,8 @@ time_slots = (
     ('2:30 - 3:30', '2:30 - 3:30'),
     ('3:30 - 4:30', '3:30 - 4:30'),
     ('4:30 - 5:30', '4:30 - 5:30'),
+    
+    
 )
 
 DAYS_OF_WEEK = (
